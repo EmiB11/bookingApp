@@ -7,7 +7,7 @@ Este proyecto es una aplicación web basada en React diseñada para la reserva y
 
 ### Visualización de la Aplicación Desplegada
 
-La aplicación está desplegada en GitHub Pages. Puedes acceder a ella visitando la siguiente URL: [https://EmiB11.github.io/bookingApp/](https://tunombredeusuariodegithub.github.io/nombre-de-tu-proyecto/). Esto facilita a los interesados y usuarios la visualización e interacción con la aplicación sin necesidad de configurar el proyecto localmente.
+La aplicación está desplegada en GitHub Pages. Puedes acceder a ella visitando la siguiente URL: [https://EmiB11.github.io/bookingApp](https://tunombredeusuariodegithub.github.io/nombre-de-tu-proyecto/). Esto facilita a los interesados y usuarios la visualización e interacción con la aplicación sin necesidad de configurar el proyecto localmente.
 
 ### Configuración del Proyecto Localmente
 

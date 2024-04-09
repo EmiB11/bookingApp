@@ -74,7 +74,7 @@ function App() {
     <AppContainer >
       <Content>
      { currentRoute !== '/bookings' ? <ProgressBar step={currentStep} /> : null}
-      <Routes>
+      <Routes >
         <Route path="/" element={<ServiceSelection categoriesArray={categoriesArray} setStep={setCurrentStep}/>} />
         <Route path="/schedule" element={<ScheduleSelection  slots={slots} setStep={setCurrentStep}/>} />
         <Route path="/confirmation" element={<ConfirmationScreen setStep={setCurrentStep} />} />
