@@ -11,7 +11,8 @@ import UserBookings from './components/UserBookings';
 import Footer from './components/Footer';
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
-
+import servicesJSON from './mock/services.json';
+import slotsJSON from './mock/slots.json';
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,17 +34,13 @@ function App() {
 
   useEffect(() => {
 
-    fetch("/mock/slots.json")
-    .then(response => response.json())
-    .then(data => setSlots(data))
-
-    fetch("/mock/services.json")
-    .then(response => response.json())
-    .then(data  => {
-      // Mock data
-      const categoriesMap : {[key: string]: {category: string,  services: {id: number, name: string, description: string}[]}} = {};
-       setServices(data.services);
-       for(const service of data.services) {
+     //simulacion de llamada a api
+    Promise.all([servicesJSON, slotsJSON])
+    .then(([dataService, slots]) => {
+       // Mock data services
+       const categoriesMap : {[key: string]: {category: string,  services: {id: number, name: string, description: string}[]}} = {};
+       setServices(dataService.services);
+       for(const service of dataService.services) {
  
        if(!categoriesMap[service.category]) {
    
@@ -59,9 +56,12 @@ function App() {
       }
     }
 
-   const categoriesArray = Object.values(categoriesMap);
-   setCategoriesArray(categoriesArray);
+     const categoriesArray = Object.values(categoriesMap);
+     setCategoriesArray(categoriesArray);
+     // Mock data slots
+     setSlots(slots);
     })
+   
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
