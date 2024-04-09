@@ -2,6 +2,7 @@
   "name": "my-booking-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/EmiB11/bookingApp",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -27,7 +28,8 @@
     "build": "react-scripts build",
     "test": "jest",
     "test:watch": "jest --watch",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
