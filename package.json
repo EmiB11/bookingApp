@@ -2,7 +2,7 @@
   "name": "my-booking-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://EmiB11.github.io/bookingApp",
+  "homepage": "https://emib11.github.io/bookingApp/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
