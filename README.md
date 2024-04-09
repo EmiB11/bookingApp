@@ -5,6 +5,10 @@
 
 Este proyecto es una aplicación web basada en React diseñada para la reserva y gestión de turnos. Ofrece una interfaz amigable para que los usuarios puedan reservar espacios según sus preferencias. Desplegada mediante GitHub Pages, permite un fácil acceso y prueba de sus funcionalidades.
 
+### Visualización de la Aplicación Desplegada
+
+La aplicación está desplegada en GitHub Pages. Puedes acceder a ella visitando la siguiente URL: [https://EmiB11.github.io/bookingApp/](https://tunombredeusuariodegithub.github.io/nombre-de-tu-proyecto/). Esto facilita a los interesados y usuarios la visualización e interacción con la aplicación sin necesidad de configurar el proyecto localmente.
+
 ### Configuración del Proyecto Localmente
 
 Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
